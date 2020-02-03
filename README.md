@@ -1,7 +1,7 @@
 evapVOFHardt
 ============
 
-This git repository was created Bruno Santos (wyldckat@github working at [blueCAPE Lda](http://www.bluecape.com.pt)), based on the original files that are available here: http://www.ttd.tu-darmstadt.de/forschung_1/openfoamdatenbank/evapvofhard.en.jsp - Quoting from that page:
+This git repository was originally created Bruno Santos (wyldckat@github working at [blueCAPE Lda](http://www.bluecape.com.pt)), based on the original files that are available here: http://www.ttd.tu-darmstadt.de/forschung_1/openfoamdatenbank/evapvofhard.en.jsp - Quoting from that page:
 
     Solver for the simulation of two phase flows with phase change (without contact line evaporation) based on Hardt/Wondra (Journal of Computational Physics, 2008).
     In case of further questions please contact M.Sc. Stefan Batzdorf.
@@ -12,6 +12,7 @@ It has been created after finding this thread: http://www.cfd-online.com/Forums/
 
 **Please keep in mind that this repository currently only focuses on making the solvers build with each OpenFOAM version. The results from each version have not yet been compared; and there are updates that are present in OpenFOAM's own code that have not been extended to this code.**
 
+Lasse Vinther updated the source code to OpenFOAM 6.0
 
 Documentation
 =============
@@ -126,6 +127,26 @@ For getting and building from zip:
 ```
 wget "https://github.com/wyldckat/evapVOFHardt/archive/of23x.zip" -O evapVOFHardt.zip
 cd evapVOFHardt-of23x
+chmod +x Allw* example/All*
+./Allwmake
+```
+
+
+OpenFOAM 6
+-------------------------------
+
+For getting and building from git:
+```
+git clone git://github.com/swagga5aur/evapVOFHardt.git
+cd evapVOFHardt
+git checkout of6
+./Allwmake
+```
+
+For getting and building from zip:
+```
+wget "https://github.com/swagga5aur/evapVOFHardt/archive/of6.zip" -O evapVOFHardt.zip
+cd evapVOFHardt-of6
 chmod +x Allw* example/All*
 ./Allwmake
 ```
