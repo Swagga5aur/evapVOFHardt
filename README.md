@@ -134,6 +134,7 @@ chmod +x Allw* example/All*
 
 OpenFOAM 6
 -------------------------------
+For making it runable in openFoam V6 a older version of the interfaceProperties directory had to be added to fetch sigma for the solver, therefore, the library interfaceSigmaProperties were made.
 
 For getting and building from git:
 ```
